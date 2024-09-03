@@ -10,4 +10,4 @@ Welcome to the SQL Repository! This repository contains various SQL scripts and 
 
 <h1>Author-Aadit Sharma</h1>
 
-<img src='https://github.com/user-attachments/assets/b8f5696c-5996-4e16-85bc-893e9e7fb337', width='500' , height='600'>
+<img src='https://github.com/user-attachments/assets/b8f5696c-5996-4e16-85bc-893e9e7fb337', width=500 , height=600>
