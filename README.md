@@ -10,5 +10,5 @@ Welcome to the SQL Repository! This repository contains various SQL scripts and 
 
 <h1>Author-Aadit Sharma</h1>
 
-<img src="https://th.bing.com/th/id/R.485c1b9a2393293b941844758155d7e4?rik=87hcLYB3SLkM7Q&pid=ImgRaw&r=0" width="500" height="600">
+<img src="https://th.bing.com/th/id/R.485c1b9a2393293b941844758155d7e4?rik=87hcLYB3SLkM7Q&pid=ImgRaw&r=0" width="800" height="700">
 
