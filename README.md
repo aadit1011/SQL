@@ -1,6 +1,6 @@
 # SQL Repository
 
-Welcome to the SQL Repository! This repository contains various SQL scripts and exercises designed to help you learn and practice SQL.
+Welcome to the SQL Repository! This repository contains various SQL scripts and exercises
 
 ## Contents
 
