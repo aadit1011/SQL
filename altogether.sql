@@ -12,12 +12,6 @@ CREATE TABLE IF NOT EXISTS Student (
 );
 
 -- ============================================
--- Display the structure of the Student table to ensure it was created correctly.
--- This will show the columns and their data types.
--- ============================================
-DESCRIBE Student;
-
--- ============================================
 -- Select all records from the Student table to check its current contents.
 -- At this stage, the table should be empty unless it was previously populated.
 -- ============================================
