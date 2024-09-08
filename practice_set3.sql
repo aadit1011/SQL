@@ -31,7 +31,7 @@ VALUES
     ('Ava', 'Lewis', 'Support Specialist', 'Support', 670000.00, '1994-11-19', '2021-08-16', 7),
     ('Ethan', 'Walker', 'Marketing Specialist', 'Marketing', 900000.00, '1992-10-11', '2017-06-25', 5);
 
--- Query to display all records in the 'staff' table
+-- Query to display all records in the 'staff' table.
 SELECT * FROM staff;
 
 -- Exercise-1: Increase the salary of all employees in the IT department by 15%
@@ -39,7 +39,7 @@ UPDATE staff
 SET salary = salary + 0.15 * salary
 WHERE Department = 'IT';
 
--- Verify the update by selecting all records from the IT department
+-- Verify the update by selecting all records from the 'IT' department.
 SELECT * FROM staff WHERE Department = 'IT';
 
 -- Exercise-2: Give a 5% raise to all employees hired before 2020
