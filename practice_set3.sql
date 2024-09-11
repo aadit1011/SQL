@@ -42,7 +42,7 @@ WHERE Department = 'IT';
 -- Verify the update by selecting all records from the 'IT' department.
 SELECT * FROM staff WHERE Department = 'IT';
 
--- Exercise-2: Give a 5% raise to all employees hired before 2020
+-- Exercise-2 : Give a 5% raise to all employees hired before 2020
 UPDATE staff 
 SET Salary = Salary + 0.05 * Salary
 WHERE Hire_Date < '2020-01-01';
