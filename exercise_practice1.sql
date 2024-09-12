@@ -1,7 +1,7 @@
--- Create a new database named 'Del'
+-- Create a new database named 'Del'.
 -- CREATE DATABASE Del;
 
--- Select the 'Del' database to use for subsequent operations
+-- Select the 'Del' database to use for subsequent operations..
 USE Del;
 
 -- Create the 'Employee' table with specified columns
