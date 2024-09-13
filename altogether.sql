@@ -1,7 +1,7 @@
 -- ============================================
 -- Create the Student table if it doesn't already exist.
 -- The table includes the following columns:
---   - student_id: Primary key to uniquely identify each student.
+--   - student_id: The primary key is used to identify each student uniquely.
 --   - name: Name of the student (up to 50 characters).
 --   - major: Major field of study (up to 20 characters).
 -- ============================================
