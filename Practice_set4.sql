@@ -120,3 +120,45 @@ FROM emp
 WHERE Salary > 100000
 GROUP BY Department
 ORDER BY employees DESC;
+
+
+
+
+-- To display the limited number of records from the table
+SELECT * FROM emp
+LIMIT 4;
+
+SELECT * FROM emp;
+-- Exercise-11
+-- Find Employees Who Work in Specific Departments 'IT', 'HR', or 'Sales'.
+
+SELECT * 
+FROM emp 
+WHERE Department IN ('IT', 'HR', 'Sales')
+ORDER BY Employee_ID DESC;
+
+
+-- Exercise-12
+--  Retrieve Employees with Specific Salaries 120,000, 150,000, or 140,000.
+
+SELECT * 
+FROM emp 
+WHERE Salary IN (120000,150000,140000);
+
+
+-- Exercise-13 
+-- List Employees Who Report to Specific Managers 3, 5, or 6.
+
+SELECT * FROM emp 
+WHERE Manager_ID IN(3,5,6)
+ORDER BY Manager_ID ASC;
+
+
+-- Exercise -14
+-- Find Employees in Certain Positions 'Developer', 'Marketing Specialist', or 'Sales Manager'
+
+
+SELECT * FROM emp 
+WHERE Position IN ('Developer', 'Marketing Specialist', 'Sales Manager');
+
+
