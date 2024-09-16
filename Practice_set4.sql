@@ -162,3 +162,14 @@ SELECT * FROM emp
 WHERE Position IN ('Developer', 'Marketing Specialist', 'Sales Manager');
 
 
+
+-- Exercise-15
+-- -- List Employees from Specific Departments with High Salaries
+-- Show the first and last names of employees in the 'Finance' and 'Marketing' departments who earn more than 100,000.
+
+SELECT First_Name , Last_Name , Salary , Department
+FROM emp 
+WHERE Department IN ('Finance', 'Marketing')
+AND Salary > 100000
+ORDER BY Salary DESC;
+
