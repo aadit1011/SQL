@@ -244,3 +244,28 @@ SELECT employee.emp_id, employee.first_name, employee.last_name, branch.branch_n
 FROM employee
 INNER JOIN branch ON employee.emp_id = branch.mgr_id;
 
+-- Nested query
+----------------------------------
+
+-- find the name of all the employees who have sold over 30000 to a single client
+
+SELECT e.emp_id,e.first_name,e.last_name
+FROM employee e 
+WHERE e.emp_id IN (
+     SELECT w.emp_id
+     FROM works_with w 
+     WHERE total_sales>30000
+);
+
+-- find all the clients who are handled by the brach that Michael Scott manages.
+
+     SELECT c.client_id,c.client_name
+     FROM client c
+     WHERE C.branch_id in (
+     SELECT b.branch_id
+     FROM branch b 
+     WHERE b.mgr_id   in (     
+          SELECT e.emp_id
+          FROM employee e
+          WHERE e.first_name='Michael' AND e.last_name='Scott')
+);
