@@ -131,6 +131,14 @@ INSERT INTO works_with VALUES(107, 405, 26000);
 INSERT INTO works_with VALUES(102, 406, 15000);
 INSERT INTO works_with VALUES(105, 406, 130000);
 
+SELECT * FROM employee;
+SELECT * FROM branch;
+SELECT * FROM client;
+SELECT* FROM works_with;
+SELECT * FROM branch_supplier;
+
+
+
 -- Retrieve all employee data, sorted by salary in descending order
 SELECT * FROM employee ORDER BY salary DESC;
 
