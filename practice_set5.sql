@@ -6,7 +6,7 @@ USE company;
 
 -- Create the employee table
 CREATE TABLE employee (
-  emp_id INT PRIMARY KEY,            -- Employee ID, primary key for the employee table
+  emp_id INT PRIMARY KEY,            -- Employee ID, the primary key for the employee table
   first_name VARCHAR(40),            -- Employee's first name
   last_name VARCHAR(40),             -- Employee's last name
   birth_day DATE,                    -- Employee's birth date
