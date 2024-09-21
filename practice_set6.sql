@@ -273,3 +273,42 @@ WHERE e.last_name = s.last_name;
 INSERT INTO employee (first_name, last_name, salary, branch_id)
 VALUES ('John', 'Doe', 75000, (SELECT branch_id FROM branch WHERE branch_name = 'Scranton'));
 
+
+
+
+-- Remove 'Micheal Scott' from organization
+
+
+DELETE FROM employee
+WHERE first_name = 'Michael' AND last_name = 'Scott';
+
+
+
+-- Appoint 'Angela Martin' as new branch manager in Scranton 
+
+UPDATE branch
+    SET mgr_id = (SELECT emp_id FROM employee WHERE first_name = 'Angela' AND last_name = 'Martin')
+    WHERE branch_name = 'Scranton';
+
+
+UPDATE branch
+    SET mgr_id = (SELECT emp_id FROM employee WHERE first_name = 'David' AND last_name = 'Wallace')
+    WHERE branch_name = 'Corporate';
+
+
+UPDATE branch
+    SET mgr_id = (SELECT emp_id FROM employee WHERE first_name = 'Josh' AND last_name = 'Porter')
+    WHERE branch_name = 'Stamford';
+
+
+
+-- set super_id to all the employee of new branch manager
+
+UPDATE employee
+SET super_id =(
+     SELECT s_id FROM (
+     SELECT emp_id AS s_id FROM employee
+     WHERE first_name = 'Angela' AND last_name = 'Martin')
+     as s_id
+)
+WHERE super_id IS NULL;
