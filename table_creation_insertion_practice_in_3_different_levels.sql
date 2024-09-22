@@ -235,9 +235,79 @@ VALUES
 (5004, 7004, '2023-04-07', 180),
 (5005, 7005, '2023-06-05', 160);
 
+-- Insert additional data into the 'department' table.
+INSERT INTO department (department_id, department_name, region)
+VALUES 
+(6006, 'Operations', 'Europe'),
+(6007, 'Customer Support', 'North America'),
+(6008, 'IT', 'Asia'),
+(6009, 'Legal', 'Australia'),
+(6010, 'Logistics', 'South America'),
+(6011, 'Procurement', 'Africa'),
+(6012, 'Research and Development', 'Europe'),
+(6013, 'Security', 'Asia'),
+(6014, 'Public Relations', 'Australia'),
+(6015, 'Quality Control', 'North America');
+
+-- Insert additional data into the 'employee' table.
+INSERT INTO employee (emp_id, first_name, last_name, birth_day, department_id)
+VALUES 
+(5006, 'Sophia', 'Taylor', '1989-09-18', 6004),
+(5007, 'James', 'Thomas', '1992-11-22', 6005),
+(5008, 'Benjamin', 'Harris', '1987-02-13', 6006),
+(5009, 'Mia', 'Walker', '1993-06-30', 6007),
+(5010, 'Ethan', 'Moore', '1994-12-05', 6008),
+(5011, 'Ava', 'Clark', '1985-08-14', 6009),
+(5012, 'Isabella', 'Lopez', '1983-10-25', 6010),
+(5013, 'Lucas', 'Martin', '1991-01-11', 6011),
+(5014, 'Amelia', 'Lee', '1986-04-22', 6012),
+(5015, 'Mason', 'Garcia', '1990-07-15', 6013);
+
+-- Insert additional data into the 'project' table.
+INSERT INTO project (project_id, project_name, start_date, end_date, department_id)
+VALUES 
+(7006, 'E-commerce Platform Development', '2023-02-01', '2023-11-30', 6006),
+(7007, 'Customer Support Chatbot Implementation', '2023-01-10', '2023-05-31', 6007),
+(7008, 'Network Security Overhaul', '2023-03-15', '2023-08-30', 6008),
+(7009, 'Legal Compliance Initiative', '2023-04-01', '2023-09-01', 6009),
+(7010, 'Global Supply Chain Optimization', '2023-01-25', '2023-10-15', 6010),
+(7011, 'Procurement Software Upgrade', '2023-05-01', '2023-11-01', 6011),
+(7012, 'New Product Research', '2023-06-10', '2023-12-20', 6012),
+(7013, 'Company-wide Security Training', '2023-07-01', '2023-10-31', 6013),
+(7014, 'Public Relations Campaign for Product Launch', '2023-03-20', '2023-06-15', 6014),
+(7015, 'Quality Audits for 2024 Product Line', '2023-02-25', '2023-12-15', 6015);
+
+-- Insert additional data into the 'project_assignment' table.
+INSERT INTO project_assignment (emp_id, project_id, assigned_date, worked_hour)
+VALUES 
+(5006, 7006, '2023-02-05', 120),
+(5007, 7007, '2023-01-12', 180),
+(5008, 7008, '2023-03-18', 200),
+(5009, 7009, '2023-04-02', 140),
+(5010, 7010, '2023-01-28', 220),
+(5011, 7011, '2023-05-05', 190),
+(5012, 7012, '2023-06-12', 150),
+(5013, 7013, '2023-07-03', 100),
+(5014, 7014, '2023-03-22', 160),
+(5015, 7015, '2023-02-27', 210);
+
+-- Insert ten additional data entries into the 'employee' table.
+INSERT INTO employee (emp_id, first_name, last_name, birth_day, department_id)
+VALUES 
+(5016, 'Charlotte', 'Perez', '1991-05-18', 6014),
+(5017, 'Elijah', 'Wilson', '1984-09-12', 6015),
+(5018, 'Harper', 'Davis', '1986-02-07', 6001),
+(5019, 'Henry', 'Martinez', '1993-11-09', 6003),
+(5020, 'Ella', 'Rodriguez', '1982-06-20', 6002),
+(5021, 'Sophia', 'Morris', '1987-08-15', 6005),
+(5022, 'James', 'Garcia', '1992-12-01', 6004),
+(5023, 'Amelia', 'Lopez', '1985-03-22', 6003),
+(5024, 'Benjamin', 'Clark', '1994-07-08', 6002),
+(5025, 'Ava', 'Walker', '1989-10-25', 6001);
+
+
 -- Retrieve data from all tables.
 SELECT * FROM employee;
 SELECT * FROM department;
 SELECT * FROM project;
 SELECT * FROM project_assignment;
-
