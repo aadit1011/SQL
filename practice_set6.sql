@@ -1,7 +1,7 @@
--- Switch to the 'company' database
+-- Switch to the 'company' database.
 USE company;
 
--- Create 'employee' table to store employee details
+-- Create a 'employee' table to store employee details
 CREATE TABLE employee (
   emp_id INT PRIMARY KEY,                      -- Unique identifier for each employee
   first_name VARCHAR(40),                      -- Employee's first name
