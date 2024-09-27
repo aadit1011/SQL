@@ -20,17 +20,14 @@ ALTER TABLE Student DROP COLUMN gpa;
 DESCRIBE Student;
 
 -- Optionally, you can add a 'gpa' column to the Student table.
--- This command is currently commented out.
--- ALTER TABLE Student ADD COLUMN gpa FLOAT;
+ALTER TABLE Student ADD COLUMN gpa FLOAT;
 
 -- Optionally, you can insert some sample records into the Student table.
--- This command is also commented out to avoid re-inserting data.
--- INSERT INTO Student (student_id, name, major) VALUES
---     (1, 'Jack', 'Biology'),
---     (2, 'Kate', 'Sociology'),
---     (3, 'Claire', 'English'),
---     (4, 'Mike', 'Comp. Science');
+INSERT INTO Student (student_id, name, major) VALUES
+    (1, 'Jack', 'Biology'),
+    (2, 'Kate', 'Sociology'),
+    (3, 'Claire', 'English'),
+    (4, 'Mike', 'Comp. Science');
 
 -- Select all records from the Student table after making changes (if any).
--- This command can be uncommented if you want to check the table's contents after modifications.
--- SELECT * FROM Student;
+SELECT * FROM Student;
