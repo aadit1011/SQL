@@ -55,10 +55,11 @@ INSERT INTO Student (student_id, name, major, gpa) VALUES
     (3, 'Claire', 'English', 3.60),
     (4, 'Mike', 'Comp. Science', 3.70);
 
--- ============================================
+-- ============================================ 
 -- Select all records from the Student table to verify that the data has been inserted correctly.
 -- This query will show all the student records, including the newly added 'gpa' values.
 -- ============================================
+
 SELECT * FROM Student;
 
 -- ============================================
