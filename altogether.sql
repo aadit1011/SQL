@@ -5,7 +5,7 @@
 --   - name: Name of the student (up to 50 characters).
 --   - major: Major field of study (up to 20 characters).
 -- ============================================
-CREATE TABLE IF NOT EXISTS Student (
+CREATE TABLE IF NOT EXISTS Student(
     student_id INT PRIMARY KEY,   -- Primary key for unique student identification
     name VARCHAR(50),             -- Student's name
     major VARCHAR(20)             -- Student's major
